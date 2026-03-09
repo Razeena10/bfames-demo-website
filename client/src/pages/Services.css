@@ -1,0 +1,128 @@
+.services-list {
+  display: grid;
+  gap: 30px;
+}
+
+.service-item {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.service-item:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.service-item h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+.service-item p {
+  font-size: 18px;
+  color: var(--text);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.service-features {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.service-features li {
+  padding: 8px 0;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.service-meta {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.duration {
+  font-size: 16px;
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    padding: 30px 20px;
+  }
+}
+
+.service-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  margin: -40px -40px 30px -40px;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover .service-image img {
+  transform: scale(1.05);
+}
+
+.services-benefits {
+  background: var(--light);
+  padding: 60px 40px;
+  border-radius: 12px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.benefit-item {
+  text-align: center;
+}
+
+.benefit-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.benefit-item h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.benefit-item p {
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.more-features {
+  color: var(--primary);
+  font-weight: 600;
+  font-style: italic;
+}
+
+.btn-outline {
+  display: inline-block;
+}

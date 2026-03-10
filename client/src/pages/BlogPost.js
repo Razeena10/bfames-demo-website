@@ -14,7 +14,7 @@ const BlogPost = () => {
 
   const fetchBlog = async () => {
     try {
-      const response = await axios.get(`/api/blog/${slug}`);
+      const response = await axios.get(`https://bfames-demo-website-1.onrender.com/api/blog/${slug}`);
       setBlog(response.data);
     } catch (error) {
       console.error('Error fetching blog:', error);

@@ -15,7 +15,7 @@ const ServiceDetail = () => {
 
   const fetchService = async () => {
     try {
-      const response = await axios.get(`/api/services/${id}`);
+      const response = await axios.get(`https://bfames-demo-website-1.onrender.com/api/services/${id}`);
       setService(response.data);
     } catch (error) {
       console.error('Error fetching service:', error);
@@ -168,7 +168,7 @@ const ServiceDetail = () => {
                 <div className="contact-info-box">
                   <h4>Questions?</h4>
                   <p>📧 info@magicianparth.com</p>
-                  <p>📱 +1 (555) 123-4567</p>
+                  <p>📱 +91 98765 43210</p>
                 </div>
               </div>
 

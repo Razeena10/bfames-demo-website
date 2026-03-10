@@ -23,7 +23,7 @@ const Contact = () => {
     setStatus({ type: '', message: '' });
 
     try {
-      await axios.post('/api/contact', formData);
+      await axios.post("https://bfames-demo-website-1.onrender.com/api/contact", formData);
       setStatus({ type: 'success', message: 'Thank you! We will get back to you soon.' });
       setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
     } catch (error) {
